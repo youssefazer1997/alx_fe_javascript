@@ -29,8 +29,8 @@ function createAddQuoteForm() {
 
   if (newQuoteText && newQuoteCategory) {
     quotes.push({
-      text: document.getElementById("newQuoteText").value,
-      category: document.getElementById("newQuoteCategory").value,
+      text: newQuoteText,
+      category: newQuoteCategory,
     });
     document.getElementById("newQuoteText").value = "";
     document.getElementById("newQuoteCategory").value = "";
