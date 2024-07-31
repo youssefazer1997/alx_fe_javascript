@@ -28,7 +28,10 @@ function createAddQuoteForm() {
   const newQuoteCategory = document.getElementById("newQuoteCategory").value;
 
   if (newQuoteText && newQuoteCategory) {
-    quotes.push({ text: newQuoteText, category: newQuoteCategory });
+    quotes.push({
+      text: document.getElementById("newQuoteText").value,
+      category: document.getElementById("newQuoteCategory").value,
+    });
     document.getElementById("newQuoteText").value = "";
     document.getElementById("newQuoteCategory").value = "";
     alert("New quote added!");
@@ -39,5 +42,3 @@ function createAddQuoteForm() {
 
 // Event listener for the "Show New Quote" button
 document.getElementById("newQuote").addEventListener("click", showRandomQuote);
-
-document.getElementById("");
