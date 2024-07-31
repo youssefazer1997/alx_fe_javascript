@@ -80,28 +80,28 @@ function addQuote() {
 }
 
 // Function to create and display the form for adding new quotes
-function createAddQuoteForm() {
-  const formContainer = document.createElement("div");
+// function createAddQuoteForm() {
+//   const formContainer = document.createElement("div");
 
-  const quoteInput = document.createElement("input");
-  quoteInput.id = "newQuoteText";
-  quoteInput.type = "text";
-  quoteInput.placeholder = "Enter a new quote";
-  formContainer.appendChild(quoteInput);
+//   const quoteInput = document.createElement("input");
+//   quoteInput.id = "newQuoteText";
+//   quoteInput.type = "text";
+//   quoteInput.placeholder = "Enter a new quote";
+//   formContainer.appendChild(quoteInput);
 
-  const categoryInput = document.createElement("input");
-  categoryInput.id = "newQuoteCategory";
-  categoryInput.type = "text";
-  categoryInput.placeholder = "Enter quote category";
-  formContainer.appendChild(categoryInput);
+//   const categoryInput = document.createElement("input");
+//   categoryInput.id = "newQuoteCategory";
+//   categoryInput.type = "text";
+//   categoryInput.placeholder = "Enter quote category";
+//   formContainer.appendChild(categoryInput);
 
-  const addButton = document.createElement("button");
-  addButton.textContent = "Add Quote";
-  addButton.onclick = addQuote;
-  formContainer.appendChild(addButton);
+//   const addButton = document.createElement("button");
+//   addButton.textContent = "Add Quote";
+//   addButton.onclick = addQuote;
+//   formContainer.appendChild(addButton);
 
-  document.body.appendChild(formContainer);
-}
+//   document.body.appendChild(formContainer);
+// }
 
 // Event listener for the "Show New Quote" button
 document.getElementById("newQuote").addEventListener("click", showRandomQuote);
