@@ -35,22 +35,6 @@ function createAddQuoteForm() {
     document.getElementById("newQuoteText").value = "";
     document.getElementById("newQuoteCategory").value = "";
 
-    const formContainer = document.createElement("div");
-
-    const quoteInput = document.createElement("input");
-    quoteInput.id = "newQuoteText";
-    quoteInput.type = "text";
-    quoteInput.placeholder = "Enter a new quote";
-    formContainer.appendChild(quoteInput);
-
-    const categoryInput = document.createElement("input");
-    categoryInput.id = "newQuoteCategory";
-    categoryInput.type = "text";
-    categoryInput.placeholder = "Enter quote category";
-    formContainer.appendChild(categoryInput);
-
-    document.body.appendChild(formContainer);
-
     alert("New quote added!");
   } else {
     alert("Please enter both a quote and a category.");
