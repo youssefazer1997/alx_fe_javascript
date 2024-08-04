@@ -19,7 +19,7 @@ let quotes = JSON.parse(localStorage.getItem("quotes")) || [
 
 function saveQuotes() {
   localStorage.setItem("quotes", JSON.stringify(quotes));
-  syncWithServer();
+  syncQuotes();
 }
 
 function showRandomQuote() {
@@ -134,13 +134,13 @@ window.onload = function () {
   } else {
     filterQuotes();
   }
-  syncWithServer();
-  setInterval(syncWithServer, 30000); // Periodic syncing every 30 seconds
+  syncQuotes();
+  setInterval(syncQuotes, 30000); // Periodic syncing every 30 seconds
 };
 
 document.getElementById("newQuote").addEventListener("click", showRandomQuote);
 
-async function syncWithServer() {
+async function syncQuotes() {
   try {
     const response = await fetch(apiUrl, {
       headers: {
