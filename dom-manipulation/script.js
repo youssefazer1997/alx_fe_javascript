@@ -1,4 +1,4 @@
-const apiUrl = "https://api.jsonbin.io/v3/b/YOUR_BIN_ID";
+const apiUrl = "https://jsonplaceholder.typicode.com/posts";
 const apiKey = "YOUR_API_KEY";
 
 // Initialize quotes from local storage or use default quotes
