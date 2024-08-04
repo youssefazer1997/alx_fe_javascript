@@ -161,7 +161,7 @@ async function syncWithServer() {
   }
 }
 
-async function updateServerQuotes() {
+async function fetchQuotesFromServer() {
   try {
     const response = await fetch(apiUrl, {
       method: "PUT",
