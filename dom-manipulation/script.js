@@ -164,7 +164,7 @@ async function syncWithServer() {
 async function fetchQuotesFromServer() {
   try {
     const response = await fetch(apiUrl, {
-      method: "PUT",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
         "X-Master-Key": apiKey,
