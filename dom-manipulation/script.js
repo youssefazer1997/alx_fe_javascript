@@ -154,7 +154,7 @@ async function syncQuotes() {
     quotes = serverQuotes;
     saveQuotes();
     populateCategoryFilter();
-    notifyUser("Quotes synchronized with the server.");
+    notifyUser("Quotes synced with server!");
   } catch (error) {
     console.error("Error syncing with server:", error);
     notifyUser("Error syncing with server.");
